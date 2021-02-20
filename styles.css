@@ -90,3 +90,14 @@ ul li {
   display: inline-block;
   padding: 0 0.8rem;
 }
+
+a,
+a:focus {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+li:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0 5px rgb(79, 153, 238);
+}
