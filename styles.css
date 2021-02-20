@@ -1,0 +1,61 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #000;
+}
+
+#okta-sign-in.auth-container.main-container {
+  background-color: #000;
+  text-align: center;
+  color: #ddd;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#okta-signin-username,
+#okta-signin-password,
+#okta-signin-submit {
+  border-radius: 30px;
+  outline: none;
+}
+
+#input7 {
+  margin: 1rem;
+}
+
+#okta-signin-submit {
+  width: 30rem;
+  height: 4rem;
+  color: white;
+  background-color: dodgerblue;
+  outline: none;
+  border: 3px solid white;
+  margin-bottom: 2rem;
+}
+
+#okta-signin-submit:hover {
+  background-color: rgb(49, 49, 207);
+}
+
+.okta-form-title {
+  font-size: 10rem;
+  margin-bottom: 5rem;
+}
+
+#okta-signin-password {
+  margin-bottom: 2rem;
+}
+
+#messageBox {
+  font-size: 2rem;
+  text-align: center;
+  background-color: black;
+  color: #ddd;
+}
+
+h1 {
+  color: #ddd;
+}
