@@ -91,8 +91,8 @@ ul li {
   padding: 0 0.8rem;
 }
 
-a,
-a:focus {
+#navigation-bar a,
+#navigation-bar a:focus {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
