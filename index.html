@@ -74,7 +74,7 @@
 
               const idToken = tokens.idToken;
               document.getElementById("messageBox").innerHTML =
-                "Hello, " + idToken + "! You just logged in! :)";
+                "Hello, " + idToken.claims + "! You just logged in! :)";
               document.getElementById("logout").style.display = "block";
             })
             .catch(function (err) {
