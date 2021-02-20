@@ -65,3 +65,28 @@ body {
 h1 {
   color: #ddd;
 }
+
+
+header {
+  position: fixed;
+  background-color: green;
+  width: 100%;
+  color: white;
+  z-index: 1;
+  font-size: 1.6rem;
+}
+
+main {
+  padding-top: 6rem;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 0.8rem;
+}
