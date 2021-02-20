@@ -26,8 +26,7 @@ body {
   margin: 1rem;
 }
 
-#okta-signin-submit,
-#logout {
+#okta-signin-submit {
   width: 30rem;
   height: 4rem;
   color: white;
@@ -38,7 +37,7 @@ body {
 }
 
 #okta-signin-submit:hover,
-#logout {
+#logout:hover {
   background-color: rgb(49, 49, 207);
 }
 
