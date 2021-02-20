@@ -45,20 +45,6 @@
       >
         Logout
       </button>
-      <header>
-        <nav>
-          <div class="nav">
-            <ul id="navigation-bar" style="display: none">
-              <li><a href="">Home</a></li>
-              <li><a href="">About</a></li>
-              <li><a href="">Contact</a></li>
-              <li>
-                <a href="https://mazdake.github.io/">Log in</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </header>
     </div>
     <script type="text/javascript">
       const oktaSignIn = new OktaSignIn({
@@ -76,8 +62,6 @@
           document.getElementById("messageBox").innerHTML =
             "Hello, " + user.email + "! You are *still* logged in! :)";
           document.getElementById("logout").style.display = "block";
-           document.getElementById("navigation-bar").style.display =
-            "inline-block";
         },
         function (error) {
           oktaSignIn
@@ -92,8 +76,6 @@
               document.getElementById("messageBox").innerHTML =
                 "Hello, " + idToken.claims.email + "! You just logged in! :)";
               document.getElementById("logout").style.display = "block";
-             document.getElementById("navigation-bar").style.display =
-            "inline-block";
             })
             .catch(function (err) {
               console.error(err);
