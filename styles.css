@@ -49,6 +49,11 @@ body {
   margin-bottom: 2rem;
 }
 
+#okta-signin-password, 
+#okta-signin-username {
+  padding: 0.5rem;
+}
+
 #messageBox {
   font-size: 2rem;
   text-align: center;
