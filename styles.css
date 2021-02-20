@@ -36,8 +36,7 @@ body {
   margin-bottom: 2rem;
 }
 
-#okta-signin-submit:hover,
-#logout:hover {
+#okta-signin-submit:hover {
   background-color: rgb(49, 49, 207);
 }
 
