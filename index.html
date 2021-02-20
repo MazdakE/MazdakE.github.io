@@ -42,7 +42,7 @@
     
     <div class="container">
       <h1 class="text-center">Simple Web Page</h1>
-      <div id="messageBox" class="jumbotron">
+      <div id="messageBox-Jumbotron" class="jumbotron">
         You are not logged in.
       </div>
       <!-- where the sign-in form will be displayed -->
@@ -73,6 +73,7 @@
             "Hello, " + user.email + "! You are *still* logged in! :)";
           document.getElementById("logout").style.display = "block";
           document.getElementById("navigation-bar").style.display = "inline-block";
+          document.getElementById("messageBox-Jumbotron").style.display = "none";
         },
         function (error) {
           oktaSignIn
@@ -88,6 +89,7 @@
                 "Hello, " + idToken.claims.email + "! You just logged in! :)";
               document.getElementById("logout").style.display = "block";
               document.getElementById("navigation-bar").style.display = "inline-block";
+              document.getElementById("messageBox-Jumbotron").style.display = "none";
             })
             .catch(function (err) {
               console.error(err);
