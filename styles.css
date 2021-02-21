@@ -103,4 +103,8 @@ ul li {
   text-shadow: 0 0 5px rgb(79, 153, 238);
 }
 
-
+.message-box {
+  padding-top: 6rem;
+  display:flex;
+  justify-content: flex-end;
+}
