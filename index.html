@@ -32,7 +32,7 @@
               <li><a href="">About</a></li>
               <li><a href="">Contact</a></li>
               <li>
-                <a href="" id="logout" onclick="logout()" style="display: none">Log out</a>
+                <a href="" id="logout" onclick="logout()">Log out</a>
               </li>
             </ul>
           </div>
@@ -50,14 +50,6 @@
       </div>
       <!-- where the sign-in form will be displayed -->
       <div id="okta-login-container"></div>
-      <button
-        id="logout"
-        class="button"
-        onclick="logout()"
-        style="display: none"
-      >
-        Logout
-      </button>
     </div>
     <script type="text/javascript">
       const oktaSignIn = new OktaSignIn({
