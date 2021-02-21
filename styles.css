@@ -55,7 +55,8 @@ body {
   padding: 0.5rem;
 }
 
-#messageBox {
+#messageBox, 
+#messageBox-Jumbotron{
   font-size: 2rem;
   text-align: center;
   background-color: black;
@@ -101,3 +102,5 @@ ul li {
   transform: scale(1.5);
   text-shadow: 0 0 5px rgb(79, 153, 238);
 }
+
+
