@@ -80,6 +80,7 @@ header {
 
 main {
   padding-top: 6rem;
+  border-radius: 60px;
 }
 
 .nav ul {
