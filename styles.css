@@ -58,12 +58,11 @@ height: 100vh;
 }
 
 #messageBox{
-  font-size: 2rem;
   text-align: center;
   background-color: dodgerblue;
   color: #ddd;
-  width:10vw;
-  height: 40vh;
+  width:80vw;
+  height: 20vh;
   border-radius: 30px;
   overflow: hidden;
   padding: 1rem;
