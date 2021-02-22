@@ -45,7 +45,7 @@
         <!-- where the sign-in form will be displayed -->
         <div id="okta-login-container"></div>
       </div>
-      <article>
+      <article id="article-body" style="display: none">
         <div class="description">
           <p>
             This is a great way to get currency if you want to travel to travel
@@ -75,6 +75,7 @@
           document.getElementById("navigation-bar").style.display =
             "inline-block";
           document.getElementById("message-box").style.display = "block";
+          document.getElementById("article-body").style.display = "block";
           /*document.getElementById("messageBox-Jumbotron").style.display = "none";*/
           /*document.getElementById("home-body").style.display = "none";*/
         },
