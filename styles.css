@@ -63,9 +63,13 @@ height: 100vh;
   background-color: dodgerblue;
   color: #ddd;
   width:10vw;
-  height: 10vh;
+  height: 40vh;
   border-radius: 30px;
+  overflow: hidden;
+  padding: 1rem;
+  font-size: 1.6rem;
 }
+
 
 h1 {
   color: #ddd;
@@ -111,5 +115,5 @@ ul li {
 .message-box {
   padding-top: 6rem;
   display:flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
