@@ -63,6 +63,7 @@
 
       oktaSignIn.authClient.token.getUserInfo().then(
         function (user) {
+          const url = window.location.href.replace("#", "mazdake.com");
           document.getElementById("messageBox").innerHTML =
             "Hello, " + user.email + "! You are *still* logged in! :)";
           document.getElementById("logout").style.display = "block";
@@ -81,6 +82,7 @@
               const idToken = tokens.idToken;
               document.getElementById("messageBox").innerHTML =
                 "Hello, " + idToken.claims.email + "! You just logged in! :)";
+              const url = window.location.href.replace("#", "mazdake.com");
               document.getElementById("logout").style.display = "block";
               document.getElementById("navigation-bar").style.display = "inline-block";
               document.getElementById("messageBox-Jumbotron").style.display = "none";
