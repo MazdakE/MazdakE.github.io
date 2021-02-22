@@ -158,3 +158,9 @@ ul li {
   box-shadow: 0 0 3px 3px #272673;
   width: 50%;
 }
+
+article {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
