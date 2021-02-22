@@ -61,8 +61,8 @@ height: 100vh;
   text-align: center;
   background-color: dodgerblue;
   color: #ddd;
-  width:100vw;
-  height: 20vh;
+  width: 100vw;
+  height: 10vh;
   border-radius: 30px;
   overflow: hidden;
   padding: 1rem;
@@ -72,7 +72,6 @@ height: 100vh;
 }
 
 #messageBox {
-  padding-top:5rem;
   text-align:left
 }
 
@@ -91,8 +90,8 @@ header {
 }
 
 main {
-  padding-top: 6rem;
-  border-radius: 60px;
+  padding-top: 2rem;
+  border-radius: 0 0 60px 60px;
 }
 
 .nav ul {
