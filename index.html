@@ -23,7 +23,7 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="home-body">
          <header>
         <nav id="navigation-bar" style="display: none">
           <div class="nav">
@@ -68,6 +68,7 @@
           document.getElementById("logout").style.display = "block";
           document.getElementById("navigation-bar").style.display = "inline-block";
           document.getElementById("messageBox-Jumbotron").style.display = "none";
+          document.getElementById("home-body").style.display = "none";
         },
         function (error) {
           oktaSignIn
@@ -84,6 +85,7 @@
               document.getElementById("logout").style.display = "block";
               document.getElementById("navigation-bar").style.display = "inline-block";
               document.getElementById("messageBox-Jumbotron").style.display = "none";
+              document.getElementById("home-body").style.display = "none";
             })
             .catch(function (err) {
               console.error(err);
