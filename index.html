@@ -39,7 +39,11 @@
         </nav>
       </header>
     
-    <div class="message-box">
+    <div class="signIn-box">
+        <p id="messageBox"></p>
+      </div>
+    
+    <div class="messageBox" id="messageBox" style="display: none">
         <p id="messageBox"></p>
       </div>
     
@@ -67,6 +71,7 @@
             "Hello, " + user.email + "! You are *still* logged in! :)";
           document.getElementById("logout").style.display = "block";
           document.getElementById("navigation-bar").style.display = "inline-block";
+          document.getElementById("message-box").style.display = "block";
           /*document.getElementById("messageBox-Jumbotron").style.display = "none";*/
           /*document.getElementById("home-body").style.display = "none";*/
         },
@@ -84,6 +89,7 @@
                 "Hello, " + idToken.claims.email + "! You just logged in! :)";
               document.getElementById("logout").style.display = "block";
               document.getElementById("navigation-bar").style.display = "inline-block";
+              document.getElementById("message-box").style.display = "block";
               /*document.getElementById("messageBox-Jumbotron").style.display = "none";*/
               /*document.getElementById("home-body").style.display = "none";*/
             })
