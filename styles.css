@@ -172,6 +172,7 @@ article {
 
 .description,
 .currency-calculator {
+  padding: 1rem;
   border-radius: 5px;
 }
 
