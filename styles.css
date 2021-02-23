@@ -173,6 +173,7 @@ article h1 {
 
 main h1 {
   text-align: center;
+  padding: 2rem;
 }
 
 .currency-calculator {
