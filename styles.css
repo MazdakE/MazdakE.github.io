@@ -157,7 +157,6 @@ ul li {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%231d2d55' fill-opacity='0.63'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.63'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
   box-shadow: 0 0 3px 3px #6a68b8;
   width: 40%;
-  height: 28vh;
   overflow: scroll;
 }
 
@@ -165,7 +164,7 @@ ul li {
   font-size: 1.6rem;
 }
 
-article {
+#article-body {
   justify-content: space-around;
   margin-top: 2rem;
   height: 40vh;
@@ -183,10 +182,11 @@ main h1 {
 .currency-calculator {
   background-color: #86b7fe;
   width: 40%;
-  height: 28vh;
+  height: 30vh;
   padding-left: 1rem;
   font-size: 1.6rem;
   color: #333;
+  overflow: scroll;
 }
 
 .description,
@@ -196,13 +196,29 @@ main h1 {
 }
 
 select {
-  width: 90%;
+  width: 33vw;
+  height: 4vh;
   margin-bottom: 1rem;
+}
+
+input {
+  width: 20vw;
+  height: 4vh;
+}
+
+select,
+input {
+  border-radius: 5px;
+  border: 0;
 }
 
 .iHave,
 .iWant {
+  width: 100%;
+  height: 20%;
   padding-bottom: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 .scroll-down {
   width: 100%;
