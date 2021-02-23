@@ -55,6 +55,37 @@
             place has the best rate for your wallet.
           </p>
         </div>
+
+        <div class="currency-calculator">
+          <form class="frConverter">
+            <div>
+              <span>I Have</span>
+              <select name="base_currency"></select>
+              <input type="hidden" name="default_base" value="usd" />
+              <input type="text" name="base_value" size="5" value="1" />
+            </div>
+            <div>
+              <span>I Want</span>
+              <select name="target_currency" onChange="frExCalc();"></select>
+              <input type="hidden" name="default_target" value="eur" />
+              <input type="text" name="target_value" size="5" value="" />
+            </div>
+            <br /><a class="frLink" href="//www.floatrates.com/"
+              >Exchange Rates</a
+            >
+          </form>
+
+          <script type="text/javascript">
+            (function () {
+              var js = document.createElement("script");
+              js.type = "text/javascript";
+              js.async = true;
+              js.src = "//www.floatrates.com/scripts/converter.js";
+              var sjs = document.getElementsByTagName("script")[0];
+              sjs.parentNode.insertBefore(js, sjs);
+            })();
+          </script>
+        </div>
       </article>
     </main>
     <script type="text/javascript">
