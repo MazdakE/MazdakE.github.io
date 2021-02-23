@@ -146,11 +146,9 @@ ul li {
   text-shadow: 0 0 5px rgb(79, 153, 238);
 }
 
-.link {
-  color: white;
-}
-.link:hover {
-  color: white;
+.help,
+.help:hover {
+  color: #333;
 }
 
 .description {
