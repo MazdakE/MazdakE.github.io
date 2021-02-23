@@ -170,6 +170,11 @@ article {
   padding-left: 1rem;
 }
 
+.description,
+.currency-calculator {
+  border-radius: 5px;
+}
+
 select {
   width: 90%;
 }
