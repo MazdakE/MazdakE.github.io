@@ -159,6 +159,10 @@ ul li {
   width: 40%;
 }
 
+.description p {
+  font-size: 1.6rem;
+}
+
 article {
   justify-content: space-around;
   margin-top: 2rem;
