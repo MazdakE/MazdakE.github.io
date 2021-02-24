@@ -280,4 +280,8 @@ input {
   #message-box {
     padding-left: 2rem;
   }
+
+  #article-body {
+    min-height: 200px;
+  }
 }
