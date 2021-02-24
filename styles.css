@@ -61,6 +61,7 @@ body {
   color: #fff;
   cursor: pointer;
   outline: 0;
+  height: auto;
   text-align: center;
 }
 
