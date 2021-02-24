@@ -77,3 +77,25 @@ body {
     padding: 2rem 4rem;
   }
 }
+
+.nav ul {
+  list-style-type: none;
+  margin-right: 10px;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  padding: 0 0.8rem;
+}
+
+#navigation-bar a,
+#navigation-bar a:focus {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+#navigation-bar li:hover {
+  transform: scale(1.5);
+  text-shadow: 0 0 5px rgb(79, 153, 238);
+}
