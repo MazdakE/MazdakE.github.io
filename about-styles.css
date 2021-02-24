@@ -20,7 +20,7 @@ body {
   background: #fff;
   border-radius: 30px;
   box-shadow: 0 0 5px 10px rgb(12, 26, 16, 0.25);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 600;
   margin: 10rem 2rem;
   max-width: 500px;
@@ -41,7 +41,7 @@ body {
 
 .card-content,
 .card footer {
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .card-footer {
