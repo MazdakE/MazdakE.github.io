@@ -59,39 +59,45 @@
           </p>
         </div>
 
-        <form action="">
-          <select name="" id="mySelect" onchange="selectedCurrency()"></select>
-          <input type="text" id="iHaveValue" />
-        </form>
+        <div class="currency-calculator">
+          <form action="">
+            <select
+              name=""
+              id="mySelect"
+              onchange="selectedCurrency()"
+            ></select>
+            <input type="text" id="iHaveValue" />
+          </form>
 
-        <script>
-          const api_url = "https://www.floatrates.com/daily/sek.json";
-          async function getCurrency() {
-            const response = await fetch(api_url);
-            const data = await response.json();
-            for (var country in data) {
-              var x = document.getElementById("mySelect");
-              var option = document.createElement("option");
-              option.text = data[country].name;
-              x.add(option);
-            }
-          }
-
-          getCurrency();
-
-          async function selectedCurrency() {
-            const response = await fetch(api_url);
-            const data = await response.json();
-            var currency = document.getElementById("mySelect").value;
-            for (var country in data) {
-              if (data[country].name === currency) {
-                document.getElementById("iHaveValue").value =
-                  data[country].inverseRate;
-                break;
+          <script>
+            const api_url = "https://www.floatrates.com/daily/sek.json";
+            async function getCurrency() {
+              const response = await fetch(api_url);
+              const data = await response.json();
+              for (var country in data) {
+                var x = document.getElementById("mySelect");
+                var option = document.createElement("option");
+                option.text = data[country].name;
+                x.add(option);
               }
             }
-          }
-        </script>
+
+            getCurrency();
+
+            async function selectedCurrency() {
+              const response = await fetch(api_url);
+              const data = await response.json();
+              var currency = document.getElementById("mySelect").value;
+              for (var country in data) {
+                if (data[country].name === currency) {
+                  document.getElementById("iHaveValue").value =
+                    data[country].inverseRate;
+                  break;
+                }
+              }
+            }
+          </script>
+        </div>
       </article>
       <article id="scroll-image" style="display: none">
         <div class="scroll-down">
