@@ -244,6 +244,21 @@ input {
   .image-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .scroll-down {
+    display: none;
+  }
+  .description {
+    height: 100%;
+  }
+
+  #article-body {
+    padding-bottom: 1rem;
+  }
+
+  .currency-calculator {
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
