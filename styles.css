@@ -253,7 +253,7 @@ input {
   }
 
   #article-body {
-    padding-bottom: 3rem;
+    margin-bottom: 3rem;
   }
 
   .currency-calculator {
