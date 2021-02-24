@@ -278,6 +278,7 @@ input {
   .description,
   .currency-calculator {
     overflow: hidden;
+    text-align: center;
   }
 
   #message-box {
@@ -295,5 +296,13 @@ input {
   #okta-signin-submit {
     width: 40%;
     margin: 1rem 0;
+  }
+
+  #iHaveValue {
+    width: 20%;
+  }
+
+  #mySelect {
+    width: 40%;
   }
 }
