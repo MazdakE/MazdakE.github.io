@@ -263,6 +263,14 @@ input {
   .currency-calculator {
     height: 100%;
   }
+  /* On mobile, we have less space so we need to use a smaller value for horizontal padding. 
+On tablets and wider screens, I've increased the horizontal padding. */
+  .card-content {
+    padding: 4rem;
+  }
+  .card footer {
+    padding: 2rem 4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -360,16 +368,4 @@ input {
 
 .card:hover .thumb {
   transform: scale(1.15);
-}
-
-/* On mobile, we have less space so we need to use a smaller value for horizontal padding. 
-On tablets and wider screens, I've increased the horizontal padding. */
-
-@media screen and (min-width: 768px) {
-  .card-content {
-    padding: 4rem;
-  }
-  .card footer {
-    padding: 2rem 4rem;
-  }
 }
