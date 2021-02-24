@@ -197,8 +197,15 @@ main h1 {
   border-radius: 5px;
 }
 
+.currency-calculator,
+select {
+  font-weight: bold;
+  color: black;
+}
+
 select {
   margin-bottom: 1rem;
+  width: 90%;
 }
 
 select,
@@ -207,9 +214,8 @@ input {
   border: 0;
 }
 
-.iHaveValue {
-  width: 100%;
-  padding-bottom: 1.5rem;
+#iHaveValue {
+  width: 70%;
   font-size: 1.2rem;
   font-weight: bold;
 }
