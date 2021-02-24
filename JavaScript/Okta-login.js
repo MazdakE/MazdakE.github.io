@@ -15,7 +15,7 @@ const oktaSignIn = new OktaSignIn({
       document.getElementById("navigation-bar").style.display =
         "inline-block";
       document.getElementById("message-box").style.display = "block";
-      document.getElementById("article-body").style.display = "flex";
+      document.getElementById("article-body").style.display = "inline-block";
       document.getElementById("scroll-image").style.display = "block";
       document.getElementById("header-currency").style.display = "block";
       document.getElementById("photo-gallery").style.display = "block";
@@ -36,7 +36,7 @@ const oktaSignIn = new OktaSignIn({
           document.getElementById("navigation-bar").style.display =
             "inline-block";
           document.getElementById("message-box").style.display = "block";
-          document.getElementById("article-body").style.display = "flex";
+          document.getElementById("article-body").style.display = "inline-block";
           document.getElementById("scroll-image").style.display = "block";
           document.getElementById("header-currency").style.display =
             "block";
