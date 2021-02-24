@@ -271,4 +271,13 @@ input {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
   }
+
+  .description,
+  .currency-calculator {
+    overflow: hidden;
+  }
+
+  #message-box {
+    padding-left: 2rem;
+  }
 }
