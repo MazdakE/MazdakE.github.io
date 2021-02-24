@@ -181,7 +181,7 @@ main h1 {
   padding: 2rem;
 }
 
-/* .currency-calculator {
+.currency-calculator {
   background-color: #86b7fe;
   width: 40%;
   height: 30vh;
@@ -189,7 +189,7 @@ main h1 {
   font-size: 1.6rem;
   color: #333;
   overflow: scroll;
-} */
+}
 
 .description,
 .currency-calculator {
@@ -221,6 +221,7 @@ input {
   font-size: 1.2rem;
   font-weight: bold;
 }
+
 .scroll-down {
   width: 100%;
 }
