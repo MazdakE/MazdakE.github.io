@@ -287,4 +287,13 @@ input {
   #article-body {
     max-height: 200px;
   }
+
+  #okta-signin-username,
+  #okta-signin-password {
+    width: 30%;
+  }
+  #okta-signin-submit {
+    width: 40%;
+    margin: 1rem 0;
+  }
 }
