@@ -78,7 +78,7 @@ body {
   }
 }
 
-header {
+#navigation-bar {
   display: block;
   position: fixed;
   background-color: #3e2107;

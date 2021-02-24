@@ -103,7 +103,7 @@ body {
   padding: 1rem;
 }
 
-header {
+#navigation-bar {
   display: block;
   position: fixed;
   background-color: #3e2107;
@@ -129,7 +129,7 @@ main {
 .nav ul {
   list-style-type: none;
   margin-right: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 ul li {
