@@ -107,6 +107,20 @@
           <img src="Gif/scroll-down.gif" alt="Scroll down gif image" />
         </div>
       </article>
+
+      <article id="photo-gallery">
+        <div class="container">
+          <img src="https://source.unsplash.com/collection/190727/800x600?1" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?2" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?3" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?4" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?5" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?6" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?7" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?8" />
+          <img src="https://source.unsplash.com/collection/190727/800x600?9" />
+        </div>
+      </article>
     </main>
     <script type="text/javascript">
       const oktaSignIn = new OktaSignIn({
@@ -129,8 +143,6 @@
           document.getElementById("article-body").style.display = "flex";
           document.getElementById("scroll-image").style.display = "block";
           document.getElementById("header-currency").style.display = "block";
-          /*document.getElementById("messageBox-Jumbotron").style.display = "none";*/
-          /*document.getElementById("home-body").style.display = "none";*/
         },
         function (error) {
           oktaSignIn
@@ -152,9 +164,6 @@
               document.getElementById("scroll-image").style.display = "block";
               document.getElementById("header-currency").style.display =
                 "block";
-
-              /*document.getElementById("messageBox-Jumbotron").style.display = "none";*/
-              /*document.getElementById("home-body").style.display = "none";*/
             })
             .catch(function (err) {
               console.error(err);
