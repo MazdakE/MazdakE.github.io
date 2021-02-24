@@ -173,6 +173,7 @@ ul li {
 #article-body {
   justify-content: space-around;
   margin-top: 2rem;
+  height: 25vh;
 }
 
 main h1 {
@@ -183,6 +184,7 @@ main h1 {
 
 .currency-calculator {
   background-color: #86b7fe;
+  width: 40%;
   padding-left: 1rem;
   font-size: 1.6rem;
   color: #333;
@@ -252,6 +254,7 @@ input {
 
   #article-body {
     margin-bottom: 3rem;
+    height: 40vh;
   }
 
   .currency-calculator {
