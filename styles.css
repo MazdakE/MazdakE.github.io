@@ -218,6 +218,7 @@ input {
   width: 70%;
   font-size: 1.2rem;
   font-weight: bold;
+  padding: 0.3rem;
 }
 
 .scroll-down {
