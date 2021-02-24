@@ -91,14 +91,13 @@ body {
   color: white;
   z-index: 1;
   font-size: 1.6rem;
-  text-align: center;
-  padding: 1rem;
+  text-align: left;
 }
 
 .nav ul {
   list-style-type: none;
   margin-right: 10px;
-  text-align: center;
+  text-align: left;
 }
 
 ul li {
