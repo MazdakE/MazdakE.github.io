@@ -23,7 +23,7 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
   margin: 10rem 2rem;
-  max-width: 500px;
+  min-width: 500px;
   overflow: hidden;
   transform: rotate(-5deg);
   transition: transform 0.2s;
