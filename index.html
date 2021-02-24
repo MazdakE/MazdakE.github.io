@@ -71,36 +71,7 @@
             <input type="text" id="iHaveValue" readonly />
             <label>SEK</label>
           </form>
-
           <script src="JavaScript/GetCurrecy.js"></script>
-          <!-- <script>
-            const api_url = "https://www.floatrates.com/daily/sek.json";
-            async function getCurrency() {
-              const response = await fetch(api_url);
-              const data = await response.json();
-              for (var country in data) {
-                var x = document.getElementById("mySelect");
-                var option = document.createElement("option");
-                option.text = data[country].name;
-                x.add(option);
-              }
-            }
-
-            getCurrency();
-
-            async function selectedCurrency() {
-              const response = await fetch(api_url);
-              const data = await response.json();
-              var currency = document.getElementById("mySelect").value;
-              for (var country in data) {
-                if (data[country].name === currency) {
-                  document.getElementById("iHaveValue").value =
-                    data[country].inverseRate;
-                  break;
-                }
-              }
-            }
-          </script> -->
         </div>
       </article>
       <article id="scroll-image" style="display: none">
@@ -123,61 +94,6 @@
         </div>
       </article>
     </main>
-    <script type="text/javascript">
-      const oktaSignIn = new OktaSignIn({
-        baseUrl: "https://dev-10881290.okta.com",
-        clientId: "0oa7o8ki8xMgqrmKv5d6",
-        authParams: {
-          issuer: "https://dev-10881290.okta.com/oauth2/default",
-        },
-        redirectUri: "https://mazdake.github.io/",
-      });
-
-      oktaSignIn.authClient.token.getUserInfo().then(
-        function (user) {
-          document.getElementById("messageBox").innerHTML =
-            "Hello, " + user.email + "! You are *still* logged in! :)";
-          document.getElementById("logout").style.display = "block";
-          document.getElementById("navigation-bar").style.display =
-            "inline-block";
-          document.getElementById("message-box").style.display = "block";
-          document.getElementById("article-body").style.display = "flex";
-          document.getElementById("scroll-image").style.display = "block";
-          document.getElementById("header-currency").style.display = "block";
-          document.getElementById("photo-gallery").style.display = "block";
-        },
-        function (error) {
-          oktaSignIn
-            .showSignInToGetTokens({
-              el: "#okta-login-container",
-            })
-            .then(function (tokens) {
-              oktaSignIn.authClient.tokenManager.setTokens(tokens);
-              oktaSignIn.remove();
-
-              const idToken = tokens.idToken;
-              document.getElementById("messageBox").innerHTML =
-                "Hello, " + idToken.claims.email + "! You just logged in! :)";
-              document.getElementById("logout").style.display = "block";
-              document.getElementById("navigation-bar").style.display =
-                "inline-block";
-              document.getElementById("message-box").style.display = "block";
-              document.getElementById("article-body").style.display = "flex";
-              document.getElementById("scroll-image").style.display = "block";
-              document.getElementById("header-currency").style.display =
-                "block";
-              document.getElementById("photo-gallery").style.display = "block";
-            })
-            .catch(function (err) {
-              console.error(err);
-            });
-        }
-      );
-
-      function logout() {
-        oktaSignIn.authClient.signOut();
-        location.reload();
-      }
-    </script>
+    <script src="JavaScript/Okta-login.js" type="text/javascript"></script>
   </body>
 </html>
