@@ -3,9 +3,12 @@ import os
 import requests
 from bs4 import BeautifulSoup
 
+from flask import Flask, Response
+from slackeventsapi import SlackEventAdapter
 from pathlib import Path
 from dotenv import load_dotenv
 
+app = Flask(__name__)
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
@@ -151,7 +154,11 @@ monopolet_menu = fetch_monopolet_menu()
 # Combine both menus
 combined_menu = f"{carotte_menu}\n\n{'='*40}\n\n{monopolet_menu}"
 
-client.chat_postMessage(channel='#test-mazdak', text=combined_menu)
+client.chat_postMessage(channel='#mazzii', text=combined_menu)
+
+@app.route("/lunch", methods=["GET", "POST"])
+def lunch_menu():
+    return Response(), 200
 # load_dotenv()
 
 # slack_app_token = os.getenv("SLACK_APP_TOKEN")
