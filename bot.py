@@ -147,18 +147,20 @@ def fetch_monopolet_menu():
     except Exception as e:
         return f"Error fetching menu: {str(e)}"
 
-# Fetch and post both menus
-carotte_menu = fetch_lunch_menu()
-monopolet_menu = fetch_monopolet_menu()
-
-# Combine both menus
-combined_menu = f"{carotte_menu}\n\n{'='*40}\n\n{monopolet_menu}"
-
-client.chat_postMessage(channel='#mazzii', text=combined_menu)
-
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch_menu():
-    return Response(), 200
+    # Fetch and post both menus
+    carotte_menu = fetch_lunch_menu()
+    monopolet_menu = fetch_monopolet_menu()
+    
+    # Combine both menus
+    combined_menu = f"{carotte_menu}\n\n{'='*40}\n\n{monopolet_menu}"
+    
+    # Post to Slack
+    client.chat_postMessage(channel='#mazzii', text=combined_menu)
+    
+    # Return the menu as response
+    return Response(combined_menu, mimetype='text/plain'), 200
 
 # load_dotenv()
 
