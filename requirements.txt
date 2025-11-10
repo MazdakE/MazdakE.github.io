@@ -1,0 +1,6 @@
+slack-sdk
+requests
+beautifulsoup4
+flask
+python-dotenv
+gunicorn

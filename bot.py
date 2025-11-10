@@ -11,6 +11,8 @@ env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
 
+print("Bot is running...")
+
 app = Flask(__name__)
 
 def fetch_lunch_menu():
@@ -161,6 +163,9 @@ def lunch_menu():
     
     # Return the menu as response
     return Response(combined_menu, mimetype='text/plain'), 200
+
+if __name__ == "__main__":
+    app.run(debug=True, port=5000)
 
 # load_dotenv()
 
