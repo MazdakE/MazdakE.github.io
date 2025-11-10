@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
-client = WebClient(token="xoxb-6739684276-9858538905143-0pIXBOax6zVtFsiXhdqFwRTV")
+client = WebClient(token=os.environ['SLACK_TOKEN'])
 
 print("Bot is running...")
 
