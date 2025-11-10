@@ -152,24 +152,17 @@ def fetch_monopolet_menu():
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch_menu():
     from flask import request, jsonify
-    import threading
     
     # Get the channel where the command was invoked
     channel_id = request.form.get('channel_id', '#mazzii')
     
-    # Function to fetch and post menu in background
-    def fetch_and_post():
-        carotte_menu = fetch_lunch_menu()
-        monopolet_menu = fetch_monopolet_menu()
-        combined_menu = f"{carotte_menu}\n\n{'='*40}\n\n{monopolet_menu}"
-        client.chat_postMessage(channel=channel_id, text=combined_menu)
+    # Fetch both menus
+    carotte_menu = fetch_lunch_menu()
+    monopolet_menu = fetch_monopolet_menu()
+    combined_menu = f"{carotte_menu}\n\n{'='*40}\n\n{monopolet_menu}"
     
-    # Start background thread
-    thread = threading.Thread(target=fetch_and_post)
-    thread.start()
-    
-    # Return immediate response to Slack
-    return jsonify({"response_type": "in_channel", "text": "Fetching lunch menus... 🍽️"}), 200
+    # Return the menu directly to Slack
+    return jsonify({"response_type": "in_channel", "text": combined_menu}), 200
 
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
