@@ -2,16 +2,16 @@ import slack
 import os
 import requests
 from bs4 import BeautifulSoup
-
 from flask import Flask, Response
-from slackeventsapi import SlackEventAdapter
+
 from pathlib import Path
 from dotenv import load_dotenv
 
-app = Flask(__name__)
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
 client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
+
+app = Flask(__name__)
 
 def fetch_lunch_menu():
     """Fetch the weekly lunch menu from Carotte Läppstiftet"""
@@ -159,6 +159,7 @@ client.chat_postMessage(channel='#mazzii', text=combined_menu)
 @app.route("/lunch", methods=["GET", "POST"])
 def lunch_menu():
     return Response(), 200
+
 # load_dotenv()
 
 # slack_app_token = os.getenv("SLACK_APP_TOKEN")
