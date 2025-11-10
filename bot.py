@@ -1,4 +1,4 @@
-import slack
+from slack_sdk import WebClient
 import os
 import requests
 from bs4 import BeautifulSoup
@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 
 env_path = Path('.') / '.env'
 load_dotenv(dotenv_path=env_path)
-client = slack.WebClient(token=os.environ['SLACK_TOKEN'])
+client = WebClient(token="xoxb-6739684276-9858538905143-0pIXBOax6zVtFsiXhdqFwRTV")
 
 print("Bot is running...")
 
